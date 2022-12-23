@@ -13,9 +13,11 @@ refs.stopBtn.disabled = true;
 refs.startBtn.addEventListener('click', onStartBtnClick);
 refs.stopBtn.addEventListener('click', onStopBtnClick);
 
+let timerId = null;
+
 function onStartBtnClick() {
   refs.body.style.backgroundColor = getRandomHexColor();
-  timerId = setInterval(() => {
+   timerId = setInterval(() => {
     refs.body.style.backgroundColor = getRandomHexColor();
   }, 1000);
 
