@@ -15,7 +15,7 @@ refs.stopBtn.addEventListener('click', onStopBtnClick);
 
 function onStartBtnClick() {
   refs.body.style.backgroundColor = getRandomHexColor();
-  let timerId = setInterval(() => {
+  timerId = setInterval(() => {
     refs.body.style.backgroundColor = getRandomHexColor();
   }, 1000);
 
