@@ -39,4 +39,3 @@ import Notiflix from 'notiflix';
 	}
 	}, delay);
 	});
-
